@@ -1,0 +1,209 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông,...)
+*/
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover{
+    background-color: rgb(220, 59, 59);
+    cursor: pointer; 
+    /* thay đổi hình dạng trỏ chuột */
+}
+
+#header .search-icon{
+    font-size: 16px;
+    color: #fff;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li{
+    display: inline-block;
+    line-height: 46px;
+    position: relative;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li > a{
+    color: #ffffff;
+}
+
+#nav li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 24px;
+    font-weight: 650px;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    background-color: rgb(197, 197, 197);
+    color: #000;
+
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    top: 100%; /*kế thừa chiều cao thằng cha*/
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#nav .subnav li{
+    width: 100%;
+    height: 38px;
+}
+
+#nav .subnav a{
+    color: #000;
+    width: 100%;
+    padding: 0 12px;
+
+}
+
+#nav .subnav li:hover a{
+    background-color: rgb(213, 213, 213) ;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; 
+    /* 50% chiều ngang của chính nó */
+    background: url('/assets/img/slider-pic1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#content{
+
+}
+
+#content .content-section{
+    width: 768px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#content .section-heading{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+#content .section-subheading{
+    margin: 15px 0;
+    text-align: center;
+    opacity: 60%;
+    font-style: italic;
+}
+#content .about-text{
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+#content .members-list{
+    padding: 32px 0;
+    /* overflow: hidden;  */
+    /* Một trong những cách khắc phục tình trạng đè do float */
+}
+
+#content .member-item{
+    float: left; 
+    /* Đè, chồng chéo */
+    width: 32.65%;
+    padding-right: 12px;
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .member-img{
+    width: 154px;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 5px; 
+}
+
+#footer{
+
+}
