@@ -20,6 +20,7 @@ html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* common */
 .clear{
     clear: both;
 }
@@ -28,6 +29,36 @@ html{
     color: #fff !important;
 }
 
+.row{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-third{
+    width: 33.333333%;
+}
+
+/* main */
 #header{
     position: fixed;
     top: 0px;
@@ -204,6 +235,11 @@ html{
 
 #content .tour-section{
     background-color: #000;
+    padding-bottom: 10%;
+}
+
+#btn_send{
+    margin-left: 4px ;
 }
 
 .ticket-list{
@@ -294,6 +330,76 @@ html{
 
 }
 
+.contact-content{
+    padding: 32px 0;
+}
+
+.contact-info{
+    font-size: 18px;
+}
+
+.contact-info i{
+    padding-right: 18px;
+    text-align: left;
+    width: 14px;
+    height: 14px;
+}
+
+.contact-form .form-control{
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#contact-btn{
+    margin-left: 80%;
+    padding: 9px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+#footer{
+    padding: 64px 16px;
+    align-items: center;
+
+}
+#footer .social-list{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+}
+
+#footer .social-list a :hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+}
+
+#footer .copyright p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+
+}
 /* Modal*/
 
 .modal{
@@ -399,9 +505,6 @@ html{
     margin-bottom: 32px;
 }
 
-#footer{
-
-}
 
 @keyframes modalFadeIn {
     from{
